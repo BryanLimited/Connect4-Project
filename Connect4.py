@@ -24,6 +24,21 @@ def print_board(board):
 board = [['0','0','0','0','0','0','0'],['0','0','0','0','0','0','0'],['0','0','0','0','0','0','0'],['0','0','0','0','0','0','0'],['0','0','0','0','0','0','0'],['0','0','0','0','0','0','0']]
 options = ['1', '2', '3', '4', '5', '6', '7']
 
+    print(" 1 2 3 4 5 6 7")
+
+    for row in board:
+        row_display = '|'
+        for cell in row:
+            if cell == 1:
+                row_display += 'X|'  
+            elif cell == -1:
+                row_display += 'O|'  
+            else:
+                row_display += ' |'  
+
+        print(row_display) 
+        print("--------------")  
+
 
 
 
